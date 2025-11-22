@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Links</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+    }
+
+    video {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(2px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h1 { font-size: 2.2rem; margin-bottom: 10px; }
+
+    .social-links {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.1);
+        transition: .2s;
+    }
+
+    .social-links a:hover {
+        transform: scale(1.15);
+        background: rgba(255,255,255,0.25);
+    }
+
+    .social-links i {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 1.6rem; }
+        .social-links i { font-size: 30px; }
+    }
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop>
+    <source src="YOUR_VIDEO.mp4" type="video/mp4">
+</video>
+
+<div class="overlay">
+    <h1>Welcome</h1>
+    <p>Follow Me.</p>
+
+    <div class="social-links">
+        <a href="https://www.instagram.com/the_shy_boy_07" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+        <a href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+    </div>
+</div>
+
+</body>
+</html>
